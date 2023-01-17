@@ -1,0 +1,9 @@
+@import "block/title.css";
+@import "block/news.css";
+
+@media (max-width: 700px) {
+  body {
+    color: yellow;
+    background-color: violet;
+  }
+}

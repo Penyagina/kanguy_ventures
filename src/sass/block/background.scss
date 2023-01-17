@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+  > p {
+    margin: 0;
+    padding: 0;
+  }
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  background: #1a163d url(../images/bg_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.conteiner {
+  max-width: 90%;
+  margin: 0 auto;
+}

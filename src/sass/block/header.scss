@@ -1,0 +1,124 @@
+.header {
+  display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.logo_header {
+  background-color: #ed7430;
+  padding: 35px 15px 0 15px;
+  border-radius: 0 0 8px 8px;
+}
+.menu_header {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 40px;
+  a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+    position: relative;
+    cursor: pointer;
+  }
+  a:after {
+    height: 6px;
+    background-color: #ed7430;
+    display: block;
+    position: absolute;
+    content: "";
+    transition: width 0.3s ease-out;
+    border-radius: 10px;
+  }
+  a:hover:after,
+  a:focus:after {
+    width: 100%;
+  }
+  li {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    list-style-type: none;
+    margin-right: 50px;
+  }
+}
+.btn_header {
+  align-self: center;
+  margin-left: auto;
+  padding: 7px 40px;
+  border: solid 3px #ed7430;
+  border-radius: 30px;
+  &:hover {
+    box-shadow: 0 0 20px #ed7430;
+    border-radius: 28px;
+  }
+
+  > a {
+    text-decoration: none;
+    font-family: "Khula";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ed7430;
+  }
+}
+@media (max-width: 960px) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menu_header {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    > li {
+      font-size: 16px;
+    }
+  }
+  .btn_header {
+    padding: 5px 20px;
+    margin: 0 auto;
+    > a {
+      font-size: 18px;
+    }
+  }
+  .logo_header {
+    padding: 15px 15px 0 15px;
+  }
+  .menu_header {
+    > li {
+      margin-right: 30px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .logo_header {
+    padding: 50px 15px 0 15px;
+    background-color: #ed7430;
+    margin: 0 auto;
+    > a {
+      margin: 0 auto;
+    }
+    > img {
+      padding-top: 10px;
+    }
+  }
+  .menu_header {
+    > li {
+      font-size: 24px;
+      margin-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .btn_header {
+    max-width: 100px;
+  }
+}

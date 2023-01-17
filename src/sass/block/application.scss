@@ -1,0 +1,81 @@
+.application {
+  max-width: 1920px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  > h2 {
+    font-family: "Khula";
+    font-size: 48px;
+    line-height: 77px;
+    font-weight: 800;
+    color: #fff;
+  }
+  > h3 {
+    font-family: "Open Sans";
+    color: #fff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 90px;
+  }
+}
+.box-application {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1650px;
+  gap: 14px;
+}
+.cell-application {
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  > img {
+    max-width: 144px;
+    align-self: center;
+    padding: 0px;
+  }
+  a::after {
+    content: "";
+  }
+  a:hover:after {
+    width: 56px;
+    display: block;
+    height: 6px;
+    background: #ed7430;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin: 3px auto;
+    box-shadow: 0 0 10px #ed7430;
+  }
+  > h4 {
+    font-family: "Open Sans";
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  > p {
+    font-family: "Open Sans";
+    color: #69677a;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+@media (max-width: 1080px) {
+  .cell-application {
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  .application {
+    h2 {
+      font-size: 48px;
+    }
+  }
+}
